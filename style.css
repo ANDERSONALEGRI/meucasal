@@ -1,0 +1,153 @@
+:root {
+    --color-bg: #fff;
+    --color-bg-2: #ccc;
+    --color-main: red;
+    --color-text: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background: var(--color-bg); 
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.nav, .container {text-align: center;
+}
+
+.nav {margin-top: 20px; 
+}
+
+.container {
+    font-size: 30px; 
+    color: var(--color-main); 
+    margin-top: 20px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.nav ul {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: var(--color-text);
+    border-bottom: solid thick;
+    padding: 14px 16px 0px 16px;
+    text-decoration: none;
+    border-bottom-color: var(--color-bg);
+    
+}
+
+.nav li a:hover {
+    border-bottom: solid thick;
+    color: var(--color-main);
+    text-decoration: none;
+}
+
+
+
+/*frase*/
+.frase{
+    color: var(--color-text);
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.container-pergunta{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f8f8;
+    margin-top: 10px;
+}
+
+button{
+    color: var(--color-bg);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    background: var(--color-text);
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 3px 3px #0000004a;
+}
+
+button:hover{
+    background: var(--color-main);
+}
+
+#fofas{
+    border-bottom-color: var(--color-main);
+}
+
+#divertidas{
+    border-bottom-color: var(--color-main);
+}
+
+#refletir{
+    border-bottom-color: var(--color-main);
+}
+
+#quentes{
+    border-bottom-color: var(--color-main);
+}
+
+/*footer*/
+.footer {
+    flex-shrink: 0;
+}
+
+.footer .footer-alegri {
+    color: var(--color-text);
+    text-align: center;
+    font-size: 23px;
+    margin-top: 20vh;
+}
+
+.nav ul::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+
+/*responsive*/
+@media (max-width:1080px){
+
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .nav ul{
+        width: 100vw;
+        display: -webkit-inline-box;
+        overflow: scroll;
+    }
+
+    
+}
+ 
